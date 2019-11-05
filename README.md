@@ -1,6 +1,3 @@
-# PortfolioRestaurantPage
-## Introduction
-This repository contains an example web-page of a restaurant with anchor navigation and slider for my portfolio
+# Restaurant Webpage
 
-## Technologies
-HTML, CSS, Javascript
+This repository contains an example of a restaurant web-page with anchor navigation and slider for my portfolio
