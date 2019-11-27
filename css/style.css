@@ -403,30 +403,65 @@ body {
 .reservation-page .page-content {
   width: 75%;
 }
-
+.vertical-centering {
+  display: table;
+}
+.vertical-centering > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.slider-wrapper {
+  width: 60%;
+}
 .reservation-img {
-  width: 41.5%;
+  width: 40%;
+  max-width: 250px;
   height: inherit;
+  display: inline-block;
+  margin: 0 2.5%;
+  overflow: hidden;
 }
-.reservation-img-left-side {
-  background: url(../img/reservation_dish1.jpg) 0% 50% no-repeat;
+
+@keyframes slidy {
+  0% { left: 0%; }
+  10% { left: 0%; }
+  11% { left: -100%; }
+  21% { left: -100%; }
+  22% { left: -200%; }
+  32% { left: -200%; }
+  33% { left: -300%; }
+  43% { left: -300%; }
+  44% { left: -400%; }
+  54% { left: -400%; }
+  55% { left: -500%; }
+  65% { left: -500%; }
+  66% { left: -600%; }
+  76% { left: -600%; }
+  77% { left: -700%; }
+  87% { left: -700%; }
+  88% { left: -800%; }
+  98% { left: -800%; }
+  100% { left: -900%; }
+}
+
+.slider {
+  position: relative;
+  width: 1400%;
+  margin: 0;
+  left: 0;
+  animation: 30s slidy infinite;
+}
+.slide {
+  width: 7.1428%;
+  top: 0; 
   float: left;
-  margin-left: 5%;
 }
-.reservation-img-left-side:hover {
-  background: url(../img/reservation_dish2.jpg) 0% 50% no-repeat;
+.reservation-block-wrapper {
+  width: 40%;
+  height: inherit;
+  display: inline-block;
 }
-.reservation-img-right-side {
-  background: url(../img/reservation_dish3.jpg) 0% 50% no-repeat;
-  float: right;
-  margin-right: 5%;
-}
-.reservation-img-right-side:hover {
-  background: url(../img/reservation_dish4.jpg) 0% 50% no-repeat;
-}
-.reservation-page .article-heading {
-  margin-top: 15%;
-}
+
 .reservation-page .article-text {
   width: 70%;
   margin-top: 3%;
